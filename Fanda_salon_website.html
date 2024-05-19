@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        .kotak_1 {
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            display: flex;
+            z-index: 1;
+        }
+
+        .container_1 {
+            display: flex;
+            z-index: -1;
+            align-items: center;
+        }
+
+        .fanda_salon {
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: 900;
+            margin: 10px;
+            color: black;
+        }
+
+        .background_utama {
+            width: 100%;
+            height: 700px;
+            background-color: rgb(36, 36, 36);
+        }
+
+        .slogan {
+            width: 90%;
+            margin-top: 100px;
+            margin-left: 30px;
+            font-size: 90px;
+            color: white;
+            position: absolute;
+        }
+
+        .deskripsi {
+            position: absolute;
+            bottom: 80px;
+            color: rgb(211, 209, 209);
+            margin-left: 50px;
+            font-size: 30px;
+        }
+
+        .icon {
+            width: 1000px;
+            position: absolute;
+            color: white;
+            transform: rotate(45deg);
+            /* transform: scale(2); */
+            left: 0px;
+            top: 0px;
+            animation: icon 30s infinite;
+        }
+
+        @keyframes icon {
+            50% {
+                left: 200px;
+                top: -200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="kotak_1">
+        <h1 class="fanda_salon">Fanda Salon</h1>
+    </div>
+
+    <div class="container_1">
+        <!-- <img class="img_utama" src="Home.png" alt="Home"> -->
+        <img class="icon" src="pngegg.png" alt="icon">
+        <div class="background_utama"></div>
+        <h1 class="slogan">Making Your Beauty Dreams Come True</h1>
+        <p class="deskripsi">With us</p>
+    </div>
+
+    <script>
+
+
+        
+    </script>
+
+</body>
+</html>
